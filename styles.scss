@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.artwork {
+  .upper-row {
+    position: relative;
+    z-index: 1;
+  }
+  .lower-row {
+    position: relative;
+    top: -10rem;
+  }
+
+  li {
+    position: relative;
+    div,
+    p {
+      position: absolute;
+    }
+  }
+  .upper-row li {
+    &:first-child {
+      z-index: 3;
+      img {
+        width: 150%;
+      }
+    }
+    &:nth-child(2) {
+      z-index: 2;
+      img {
+        width: 150%;
+      }
+      top: 2rem;
+    }
+    &:nth-child(3) {
+      z-index: 1;
+      img {
+        width: 150%;
+      }
+      top: 9rem;
+    }
+    &:last-child {
+      top: 5rem;
+      img {
+        width: 150%;
+      }
+    }
+  }
+}
+
+#carousel-one {
+  justify-content: center;
+  //   .carousel-item {
+  //     display: block;
+  //   }
+  img {
+    background-color: black;
+  }
+}
