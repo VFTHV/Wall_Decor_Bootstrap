@@ -3,6 +3,25 @@ body {
   box-sizing: border-box;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.container {
+  padding: 2em 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 .artwork {
   .upper-row {
     position: relative;
@@ -10,7 +29,8 @@ body {
   }
   .lower-row {
     position: relative;
-    top: -10rem;
+    top: -3rem;
+    z-index: -1;
   }
 
   li {
@@ -20,7 +40,8 @@ body {
       position: absolute;
     }
   }
-  .upper-row li {
+  .upper-row li,
+  .lower-row li {
     &:first-child {
       z-index: 3;
       img {
@@ -32,17 +53,17 @@ body {
       img {
         width: 150%;
       }
-      top: 2rem;
+      top: 1rem;
     }
     &:nth-child(3) {
       z-index: 1;
       img {
         width: 150%;
       }
-      top: 9rem;
+      top: 3rem;
     }
     &:last-child {
-      top: 5rem;
+      top: 2rem;
       img {
         width: 150%;
       }
