@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\09_BootStrap4_course\\Bootstrap4\\conFusion"
+	},
+	{
+		"path": "..\\09_BootStrap4_course"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "11b_BigWall_decor_bootstrap"
+  }
+}
